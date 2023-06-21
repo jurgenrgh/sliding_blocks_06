@@ -5,11 +5,11 @@ import 'package:sliding_blocks_06/page/toroid_page.dart';
 import 'package:sliding_blocks_06/page/grid_page.dart';
 import 'package:sliding_blocks_06/widget/tabbar_widget.dart';
 import 'package:sliding_blocks_06/widget/globals.dart';
-import 'package:sliding_blocks_06/widget/functions.dart';
-import 'package:sliding_blocks_06/widget/state.dart';
+//import 'package:sliding_blocks_06/widget/functions.dart';
+//import 'package:sliding_blocks_06/widget/state.dart';
 
 // See Readme.md for explanations
-//
+// A nominal change to test git reaction
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([
