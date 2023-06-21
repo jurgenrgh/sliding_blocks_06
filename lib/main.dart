@@ -9,7 +9,7 @@ import 'package:sliding_blocks_06/widget/globals.dart';
 //import 'package:sliding_blocks_06/widget/state.dart';
 
 // See Readme.md for explanations
-// A nominal change to test git reaction
+// Another nominal change to test git reaction
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([
