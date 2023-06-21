@@ -10,6 +10,7 @@ import 'package:sliding_blocks_06/widget/globals.dart';
 
 // See Readme.md for explanations
 // Another nominal change to test git reaction
+// Still another change to test github connection
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([
