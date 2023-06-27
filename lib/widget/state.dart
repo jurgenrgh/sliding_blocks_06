@@ -248,14 +248,4 @@ class Status {
     updateCurrentMoves(ixGame);
     dumpCurrentMoves(ixGame);
   }
-
-  ////////////////////////////////////////////////////////////////////
-  // The specified move is added to the history list
-  // move is an integer of the form r*64 + l*16 + u*4 + d
-  ////////////////////////////////////////////////////////////////////
-  int appendMoveHistory(int ixBlock, int move) {
-    int moveCount = 0;
-
-    return moveCount;
-  }
 }

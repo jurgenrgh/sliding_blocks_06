@@ -17,16 +17,16 @@ class _ToroidPageState extends State<ToroidPage> {
   static int ixToroidGame = Globals.lastUsedToroidGameIx;
   Color? backC = Colors.blue[200];
 
-  //This function is passed as an argument to the popupMenu
-  //Called when the menu selection changes
-  // void handleGameChange(dynamic ix) {
-  //   //print("HandleGameChange called");
-  //   setState(() {
-  //     backC = Colors.blue[800];
-  //     Globals.lastUsedSlidingBlocksGameIx = ix;
-  //     ixToroidGame = ix;
-  //   });
-  // }
+  // This function is passed as an argument to the popupMenu
+  // Called when the menu selection changes
+   void handleGameChange(dynamic ix) {
+
+     setState(() {
+       backC = Colors.blue[800];
+       Globals.lastUsedSlidingBlocksGameIx = ix;
+       ixToroidGame = ix;
+     });
+   }
 
   @override
   Widget build(BuildContext context) {
@@ -47,9 +47,9 @@ class _ToroidPageState extends State<ToroidPage> {
       body: Center(
         child: Column(
           children: [
-            // popupMenu(
-            //   handleGameChange,
-            // ),
+             popupMenu(
+               handleGameChange,
+             ),
             Container(
               width: boardPixWidth,
               height: boardPixHeight,
@@ -57,6 +57,7 @@ class _ToroidPageState extends State<ToroidPage> {
                   color: Colors.blue[800],
                   border: Border.all(
                       color: Colors.blue[800]!, width: Globals.boardMargin)),
+
               child: Stack(
                 children: movableBlockList,
               ),
